@@ -8,6 +8,7 @@ from .models import Order
 
 
 # Create your views here.
+
 def index(request):
     form = ContactForm()
     if request.method == 'POST':
@@ -82,6 +83,7 @@ def order_delete(request: HttpRequest, pk=int) -> HttpResponse:
 @login_required
 def blog(request):
     return render(request, 'blog.html')
+
 
 # def blog_list(request):
 #
