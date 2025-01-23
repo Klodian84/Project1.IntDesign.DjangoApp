@@ -480,19 +480,15 @@
                     </div>
 
                     <div>
-                        <form action="" method="post">
+                        <form action=" " method="post">
                             {% csrf_token %}>
                             {{ form|crispy }}
+                            <button type="submit">
+                            SEND
+                            </button>
                         </form>
                     </div>
 
-
-                    <div class="btn_box">
-                        <button type="submit">
-                            SEND
-                        </button>
-                    </div>
-                    </form>
                 </div>
             </div>
             <div class="col-md-5 col-lg-6">
